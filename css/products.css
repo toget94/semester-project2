@@ -1,0 +1,37 @@
+main {
+  margin: 70px;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+}
+
+h4 {
+  background-color: #212121;
+  text-transform: uppercase;
+  color: white;
+  padding: 15px;
+}
+
+p {
+  padding-top: 20px;
+  padding-left: 10px;
+}
+
+.name-price {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  margin-top: -26px;
+}
+
+.product-container {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+}
+
+.product {
+  margin: 20px;
+}
+
+.product img {
+  width: 388px;
+  height: 258px;
+}

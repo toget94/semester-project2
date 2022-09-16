@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link href="css/styles.css" rel="stylesheet" />
+    <link href="css/login.css" rel="stylesheet" />
+    <title>FW | Login</title>
+  </head>
+  <body>
+    <header>
+      <a href="index.html"
+        ><img src="images/fw.png" alt="Logo" class="logo"
+      /></a>
+      <nav>
+        <ul>
+          <h5 class="username-container"></h5>
+      </nav>
+    </header>
+    <main>
+        <div class="form-container">
+            <form id="loginForm">
+                <h3>Login</h3>
+                <div class="message-container"></div>
+                <div>
+                    <label for="username"></label>
+                    <input id="username" placeholder="Username/Email"/>
+                </div>
+                <div>
+                    <label for="password"></label>
+                    <input id="password" placeholder="Password"/>
+                </div>
+                <button class="login-btn">Submit</button>
+            </form>
+        </div>
+    </main>
+<script src="js/login.js" type="module"></script>
+<script src="js/script.js" type="module"></script>
+</html>

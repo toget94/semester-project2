@@ -1,0 +1,40 @@
+.form-container {
+  margin: 250px auto;
+  border-style: solid;
+  border-width: 0.5px;
+  padding: 50px;
+  max-width: 200px;
+}
+
+input,
+.login-btn {
+  margin-top: 10px;
+  padding: 10px;
+  border-radius: 0px;
+  border: 0.5px solid #212121;
+}
+
+.message {
+  width: 175px;
+  padding: 15px;
+  border: 0.5px solid #212121;
+  color: grey;
+}
+
+.message.error {
+  border-color: red;
+  color: white;
+  background: red;
+}
+
+.message.warning {
+  border-color: orange;
+  color: white;
+  background: orange;
+}
+
+.message.success {
+  border-color: rgb(48, 171, 48);
+  color: white;
+  background: rgb(48, 171, 48);
+}
