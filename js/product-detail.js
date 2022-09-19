@@ -1,5 +1,7 @@
 import { getAddedProduct } from "./components/addFunction.js";
 import { createNavMenu } from "./components/createNavMenu.js";
+import { baseUrl } from "./data/baseUrl.js";
+
 const productContainer = document.querySelector(".detail-container");
 const addedProduct = getAddedProduct();
 
@@ -7,7 +9,8 @@ const queryString = document.location.search;
 const params = new URLSearchParams(queryString);
 const id = params.get("id");
 
-const url = "http://localhost:1337/products/" + id;
+const url =
+  "https://semester-project2-thomasmelhus.herokuapp.com/products/" + id;
 
 createNavMenu();
 

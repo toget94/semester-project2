@@ -15,10 +15,6 @@ img {
   width: 70px;
 }
 
-nav {
-  background-color: white;
-}
-
 ul {
   display: flex;
   justify-content: right;
@@ -36,7 +32,15 @@ a {
 }
 
 a.active {
-  color: red;
+  text-decoration: underline;
+}
+.back-btn {
+  margin-top: 0px;
+  margin-left: 30px;
+  font-size: 40px;
+}
+
+.back-btn:hover {
 }
 
 .add-btn,
