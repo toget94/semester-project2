@@ -1,9 +1,6 @@
 import { baseUrl } from "./data/baseUrl.js";
-import { createNavMenu } from "./components/createNavMenu.js";
 const productContainer = document.querySelector(".product-container");
 const products = baseUrl + "products";
-
-createNavMenu();
 
 async function getProducts() {
   try {

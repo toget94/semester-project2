@@ -1,5 +1,4 @@
 import { getAddedProduct } from "./components/addFunction.js";
-import { createNavMenu } from "./components/createNavMenu.js";
 import { baseUrl } from "./data/baseUrl.js";
 
 const productContainer = document.querySelector(".detail-container");
@@ -11,8 +10,6 @@ const id = params.get("id");
 
 const url =
   "https://semester-project2-thomasmelhus.herokuapp.com/products/" + id;
-
-createNavMenu();
 
 async function getProduct() {
   const response = await fetch(url);
@@ -35,6 +32,7 @@ async function getProduct() {
   function createHtml(product) {
     productContainer.innerHTML = `<section class="image">
                                       <img src="${product.image.url}">
+                                      <a href="products.html"><h4 class="back-btn">&blacktriangleleft; back<h4/></a>
                                     </section>
                                     <section class="product">
                                       <h1>${product.title}</h1>

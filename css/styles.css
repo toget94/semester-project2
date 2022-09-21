@@ -11,65 +11,238 @@ img {
   object-fit: cover;
 }
 
-.logo {
-  width: 70px;
+/* Mobile */
+@media (min-width: 350px) {
+  .logo {
+    width: 50px;
+  }
+
+  nav {
+    display: none;
+  }
+
+  label {
+    display: flex;
+    justify-content: right;
+    margin: 20px 20px -30px;
+  }
+
+  #hamburger-menu {
+    display: none;
+  }
+
+  #hamburger-menu:checked ~ nav {
+    display: block;
+  }
+
+  ul {
+    display: flex;
+    justify-content: center;
+    background-color: white;
+    list-style-type: none;
+  }
+
+  ul li {
+    margin-right: 20px;
+  }
+
+  a {
+    text-decoration: none;
+    color: #212121;
+  }
+
+  a.active {
+    text-decoration: underline;
+  }
+  .back-btn {
+    margin-top: 0px;
+    margin-left: 30px;
+    font-size: 2px;
+  }
+
+  .back-btn:hover {
+    cursor: pointer;
+  }
+
+  .add-btn,
+  .login-btn,
+  .to-login-page {
+    color: white;
+    background-color: #212121;
+    padding: 7px 20px;
+    max-width: 100px;
+    border-style: none;
+  }
+
+  .add-btn:hover,
+  .added-btn:hover,
+  .login-btn:hover,
+  .to-login-page:hover {
+    cursor: pointer;
+    color: #212121;
+    background-color: white;
+    border: 1px solid #212121;
+  }
+
+  .name-price {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    margin-top: -26px;
+  }
+
+  .message {
+    background-color: red;
+    padding: 20px;
+  }
 }
 
-ul {
-  display: flex;
-  justify-content: right;
-  margin-top: -50px;
-  list-style-type: none;
+/* Tablet */
+@media (min-width: 800px) {
+  .logo {
+    width: 50px;
+  }
+
+  nav {
+    display: block;
+  }
+
+  label {
+    display: none;
+  }
+
+  #hamburger-menu {
+    display: none;
+  }
+
+  #hamburger-menu:checked ~ nav {
+    display: block;
+  }
+
+  ul {
+    display: flex;
+    margin-top: -35px;
+    justify-content: right;
+    background-color: white;
+    list-style-type: none;
+  }
+
+  ul li {
+    margin-right: 20px;
+  }
+
+  a {
+    text-decoration: none;
+    color: #212121;
+  }
+
+  a.active {
+    text-decoration: underline;
+  }
+  .back-btn {
+    margin-top: 0px;
+    margin-left: 30px;
+    font-size: 40px;
+  }
+
+  .back-btn:hover {
+  }
+
+  .add-btn,
+  .login-btn,
+  .to-login-page {
+    color: white;
+    background-color: #212121;
+    padding: 7px 20px;
+    max-width: 100px;
+    border-style: none;
+  }
+
+  .add-btn:hover,
+  .added-btn:hover,
+  .login-btn:hover,
+  .to-login-page:hover {
+    cursor: pointer;
+    color: #212121;
+    background-color: white;
+    border: 1px solid #212121;
+  }
+
+  .name-price {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    margin-top: -26px;
+  }
+
+  .message {
+    background-color: red;
+    padding: 20px;
+  }
 }
 
-ul li {
-  margin-right: 20px;
-}
+/* Desktop */
+@media (min-width: 1080px) {
+  .logo {
+    width: 70px;
+  }
 
-a {
-  text-decoration: none;
-  color: #212121;
-}
+  ul {
+    display: flex;
+    justify-content: right;
+    margin-top: -50px;
+    margin-bottom: 25px;
+    list-style-type: none;
+  }
 
-a.active {
-  text-decoration: underline;
-}
-.back-btn {
-  margin-top: 0px;
-  margin-left: 30px;
-  font-size: 40px;
-}
+  ul li {
+    margin-right: 20px;
+  }
 
-.back-btn:hover {
-}
+  a {
+    text-decoration: none;
+    color: #212121;
+  }
 
-.add-btn,
-.login-btn,
-.to-login-page {
-  color: white;
-  background-color: #212121;
-  padding: 7px 20px;
-  max-width: 100px;
-  border-style: none;
-}
+  a.active {
+    text-decoration: underline;
+  }
+  .back-btn {
+    margin-top: 0px;
+    margin-left: 30px;
+    font-size: 40px;
+  }
 
-.add-btn:hover,
-.added-btn:hover,
-.login-btn:hover,
-.to-login-page:hover {
-  cursor: pointer;
-  color: #212121;
-  background-color: white;
-  border: 1px solid #212121;
-}
+  .add-btn,
+  .login-btn,
+  .to-login-page {
+    color: white;
+    background-color: #212121;
+    padding: 7px 20px;
+    max-width: 100px;
+    border-style: none;
+  }
 
-.name-price {
-  display: grid;
-  grid-template-columns: 1fr 1fr;
-  margin-top: -26px;
-}
+  .add-btn {
+    margin-left: -70px;
+  }
 
-.message {
-  background-color: red;
-  padding: 20px;
+  .add-btn:hover,
+  .added-btn:hover,
+  .login-btn:hover,
+  .to-login-page:hover {
+    cursor: pointer;
+    color: #212121;
+    background-color: white;
+    border: 1px solid #212121;
+  }
+
+  .name-price {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    margin-top: -26px;
+  }
+
+  .message {
+    background-color: red;
+    padding: 20px;
+  }
 }

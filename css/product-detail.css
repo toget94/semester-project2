@@ -1,42 +1,164 @@
-main {
-  margin: 70px;
+/* Mobile */
+@media (min-width: 350px) {
+  .image img {
+    width: 100vw;
+    height: 300px;
+  }
+
+  .product {
+    max-width: 200px;
+    margin-top: -58px;
+    margin-left: 50px;
+  }
+
+  h1 {
+    font-family: Impact, Haettenschweiler, "Arial Narrow Bold", sans-serif;
+    margin-top: 50px;
+    margin-left: -70px;
+    width: 310px;
+    text-transform: uppercase;
+    background-color: #212121;
+    padding: 10px 30px;
+    color: white;
+    font-size: 20px;
+  }
+
+  p {
+    font-size: 16px;
+    font-weight: lighter;
+  }
+
+  h3 {
+    margin-top: 80px;
+    margin-bottom: -10px;
+  }
+
+  .added-btn {
+    color: #212121;
+    background-color: white;
+    padding: 7px 20px;
+    max-width: 100px;
+    border-style: solid;
+    border-width: 0.5px;
+  }
+
+  .back-btn {
+    position: absolute;
+    margin-top: 63px;
+    margin-left: 10px;
+    font-size: 16px;
+  }
 }
 
-.detail-container {
-  display: grid;
-  grid-template-columns: 1fr 1fr;
-  margin-top: 130px;
+/* Tablet */
+@media (min-width: 800px) {
+  .detail-container {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    margin-top: 130px;
+    margin-left: 20px;
+  }
+
+  .image img {
+    width: 430px;
+    height: 303px;
+  }
+
+  .product {
+    margin-top: -50px;
+    margin-left: 70px;
+  }
+
+  h1 {
+    font-family: Impact, Haettenschweiler, "Arial Narrow Bold", sans-serif;
+    text-transform: uppercase;
+    background-color: #212121;
+    padding: 20px;
+    color: white;
+    font-size: 20px;
+    margin-left: -5px;
+    width: 270px;
+  }
+
+  h3 {
+    margin-top: 30px;
+    margin-bottom: -10px;
+    font-size: 16px;
+  }
+
+  .product {
+    margin-left: 30px;
+  }
+
+  .added-btn {
+    color: #212121;
+    background-color: white;
+    padding: 7px 20px;
+    max-width: 100px;
+    border-style: solid;
+    border-width: 0.5px;
+  }
+
+  .back-btn {
+    margin-left: 30px;
+    margin-top: -370px;
+  }
 }
 
-.image img {
-  width: 650px;
-  height: 433px;
-}
+/* Desktop */
+@media (min-width: 1080px) {
+  main {
+    margin: 70px;
+  }
 
-.product {
-  margin-top: -58px;
-  margin-left: 70px;
-}
+  .detail-container {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    margin-top: 130px;
+  }
 
-h1 {
-  font-family: Impact, Haettenschweiler, "Arial Narrow Bold", sans-serif;
-  text-transform: uppercase;
-  background-color: #212121;
-  padding: 20px 50px;
-  color: white;
-  font-size: 70px;
-}
+  .image img {
+    width: 737px;
+    height: 491px;
+  }
 
-h3 {
-  margin-top: 30px;
-  margin-bottom: -10px;
-}
+  .product {
+    margin-top: -50px;
+    margin-left: 170px;
+  }
 
-.added-btn {
-  color: #212121;
-  background-color: white;
-  padding: 7px 20px;
-  max-width: 100px;
-  border-style: solid;
-  border-width: 0.5px;
+  h1 {
+    font-family: Impact, Haettenschweiler, "Arial Narrow Bold", sans-serif;
+    text-transform: uppercase;
+    background-color: #212121;
+    padding: 20px 50px;
+    color: white;
+    font-size: 30px;
+    margin-left: -70px;
+  }
+
+  h3 {
+    margin-top: 30px;
+    margin-bottom: -10px;
+  }
+
+  p,
+  h3 {
+    margin-left: -70px;
+  }
+
+  .added-btn,
+  .added-btn {
+    color: #212121;
+    background-color: white;
+    padding: 7px 20px;
+    max-width: 100px;
+    border-style: solid;
+    border-width: 0.5px;
+    margin-left: -80px;
+  }
+
+  .back-btn {
+    margin-top: -550px;
+  }
 }
