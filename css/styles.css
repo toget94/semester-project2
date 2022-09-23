@@ -66,6 +66,8 @@ img {
 
   .add-btn,
   .login-btn,
+  .logOut-btn,
+  .createProduct-btn,
   .to-login-page {
     color: white;
     background-color: #212121;
@@ -76,7 +78,9 @@ img {
 
   .add-btn:hover,
   .added-btn:hover,
+  .logOut-btn:hover,
   .login-btn:hover,
+  .createProduct-btn:hover,
   .to-login-page:hover {
     cursor: pointer;
     color: #212121;
@@ -149,6 +153,8 @@ img {
 
   .add-btn,
   .login-btn,
+  .logOut-btn,
+  .createProduct-btn,
   .to-login-page {
     color: white;
     background-color: #212121;
@@ -160,6 +166,8 @@ img {
   .add-btn:hover,
   .added-btn:hover,
   .login-btn:hover,
+  .logOut-btn:hover,
+  .createProduct-btn:hover,
   .to-login-page:hover {
     cursor: pointer;
     color: #212121;
@@ -213,6 +221,8 @@ img {
 
   .add-btn,
   .login-btn,
+  .logOut-btn,
+  .createProduct-btn,
   .to-login-page {
     color: white;
     background-color: #212121;
@@ -228,6 +238,8 @@ img {
   .add-btn:hover,
   .added-btn:hover,
   .login-btn:hover,
+  .logOut-btn:hover,
+  .createProduct-btn:hover,
   .to-login-page:hover {
     cursor: pointer;
     color: #212121;

@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link href="css/styles.css" rel="stylesheet" />
+    <link href="css/admin.css" rel="stylesheet" />
+    <title>FeetWear</title>
+  </head>
+  <body>
+    <header>
+      <a href="index.html"
+        ><img src="images/fw.png" alt="Logo" class="logo"
+      /></a>
+      <nav>
+        <div class="menu-container"></div>
+        <a href="./index.html" class="logOut-btn">Log Out</a>
+      </nav>
+    </header>
+    <main>
+      <div class="form-container">
+        <form id="addForm">
+          <h3>Add Product</h3>
+          <div class="message-container"></div>
+          <div>
+            <label for="title" id="title"></label>
+            <input id="title" placeholder="Title" />
+          </div>
+          <div>
+            <label for="price" id="price"></label>
+            <input id="price" placeholder="Price" />
+          </div>
+          <div>
+            <label for="description" id="description"></label>
+            <input
+              id="description"
+              class="description"
+              placeholder="Description"
+            />
+          </div>
+          <button class="createProduct-btn">Add Product</button>
+        </form>
+      </div>
+    </main>
+  </body>
+  <script src="js/admin.js" type="module"></script>
+</html>

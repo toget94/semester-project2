@@ -1,0 +1,100 @@
+.form-container {
+  margin: 15px auto;
+  border-style: solid;
+  border-width: 0.5px;
+  padding: 50px;
+  max-width: 200px;
+}
+
+input,
+.createProduct-btn {
+  margin-top: 10px;
+  padding: 10px;
+  border-radius: 0px;
+  border: 0.5px solid #212121;
+}
+
+.description {
+  padding-bottom: 3rem;
+}
+
+.message {
+  width: 175px;
+  padding: 15px;
+  border: 0.5px solid #212121;
+  color: grey;
+}
+
+.message.error {
+  border-color: red;
+  color: white;
+  background: red;
+}
+
+.message.warning {
+  border-color: orange;
+  color: white;
+  background: orange;
+}
+
+.message.success {
+  border-color: rgb(48, 171, 48);
+  color: white;
+  background: rgb(48, 171, 48);
+}
+
+/* Mobile */
+@media (min-width: 350px) {
+  header {
+    margin-top: 20px;
+  }
+
+  main .logo {
+    width: 150px;
+    margin-left: 100px;
+  }
+
+  .back-btn {
+    font-size: 16px;
+  }
+
+  input,
+  .createProduct-btn {
+    margin-top: 20px;
+    padding: 10px;
+    border-radius: 0px;
+    border: 0.5px solid #212121;
+  }
+}
+
+/* Tablet */
+@media (min-width: 800px) {
+  header {
+    margin-top: 20px;
+  }
+
+  main .logo {
+    width: 150px;
+    margin-left: 320px;
+  }
+
+  .back-btn {
+    font-size: 16px;
+  }
+
+  input,
+  .createProduct-btn {
+    margin-top: 10px;
+    padding: 10px;
+    border-radius: 0px;
+    border: 0.5px solid #212121;
+  }
+}
+
+/* Desktop */
+@media (min-width: 1080px) {
+  main .logo {
+    width: 150px;
+    margin-left: 640px;
+  }
+}

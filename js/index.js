@@ -1,7 +1,7 @@
 import { baseUrl } from "./data/baseUrl.js";
-//import { createNavMenu } from "./components/createNavMenu.js";
+// import { products } from "../data/productList";
 const bannerUrl = baseUrl + "home";
-const productsUrl = baseUrl + "products";
+const products = baseUrl + "products";
 const bannerContainer = document.querySelector(".banner-container");
 const arrivalsContainer = document.querySelector(".arrivals-container");
 
@@ -31,34 +31,61 @@ async function getBanner() {
 getBanner();
 
 async function getProducts() {
-  try {
-    const response2 = await fetch(productsUrl);
-    const products = await response2.json();
+  const response = await fetch(products);
+  const product = await response.json();
 
-    arrivalsContainer.innerHTML = "";
+  let html = "";
 
-    createProductHTML(products);
+  for (let i = 0; i < product.length; i++) {
+    console.log(product[i].featured);
 
-    function createProductHTML(products) {
-      for (let i = 0; i < products.length; i++) {
-        if (i === 2) {
-          break;
-        }
+    html += `<div class="product">
+              <a href="product-detail.html?id=${product[i].id}">
+                  <img src="${product[i].image.formats.medium.url}">
+              </a>
+              <div class="name-price">
+                <h4>${product[i].title}</h4>
+                <p>Price: $${product[i].price}</p>
+              </div>
+            </div>`;
 
-        arrivalsContainer.innerHTML += `<div class="product">
-                                           <a href="product-detail.html?id=${products[i].id}">
-                                              <img src="${products[i].image.formats.medium.url}">
-                                           </a>
-                                           <div class="name-price">
-                                              <h4>${products[i].title}</h4>
-                                              <p>Price: $${products[i].price}</p>
-                                           </div>
-                                        </div>`;
-      }
+    if (product[i].featured === true) {
+      return (arrivalsContainer.innerHTML = html);
     }
-  } catch (error) {
-    console.log(error);
   }
 }
 
 getProducts();
+
+// async function getProducts() {
+//   try {
+//     const response2 = await fetch(productsUrl);
+//     const products = await response2.json();
+
+//     arrivalsContainer.innerHTML = "";
+
+//     createProductHTML(products);
+
+//     function createProductHTML(products) {
+//       for (let i = 0; i < products.length; i++) {
+//         if (i === 2) {
+//           break;
+//         }
+
+//         arrivalsContainer.innerHTML += `<div class="product">
+//                                            <a href="product-detail.html?id=${products[i].id}">
+//                                               <img src="${products[i].image.formats.medium.url}">
+//                                            </a>
+//                                            <div class="name-price">
+//                                               <h4>${products[i].title}</h4>
+//                                               <p>Price: $${products[i].price}</p>
+//                                            </div>
+//                                         </div>`;
+//       }
+//     }
+//   } catch (error) {
+//     console.log(error);
+//   }
+// }
+
+// getProducts();

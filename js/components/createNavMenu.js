@@ -1,20 +1,29 @@
-export function createNavMenu() {
+import { getUser } from "../data/storage";
+
+export default function createMenu() {
   const { pathname } = document.location;
+  const container = document.querySelector(".menu-container");
+  const username = getUser();
 
-  console.log(pathname);
+  let authLink = `<a href="login.html" class="${
+    pathname === "/login.html" ? "active" : ""
+  }">Login</a>`;
 
-  const navContainer = document.querySelector("nav");
+  if (username) {
+    authLink = `<a href="admin.html" class="${
+      pathname === "/admin.html" ? "active" : ""
+    }">Add Product</a>
+                    <span>Hi ${username}</span>`;
+  }
 
-  navContainer.innerHTML += `<ul>
-                              <li><a href="index.html" id="home-btn" class="${
-                                pathname === "index.html" ? "active" : ""
-                              }">Home</a></li>
-                              <li><a href="products.html" id="products-btn" class="${
-                                pathname === "products.html" ? "active" : ""
-                              }">Products</a></li>
-                              <li><a href="cart.html" id="cart-btn" class="${
-                                pathname === "cart.html" ? "active" : ""
-                              }">Cart</a></li>
-                              <li><a href="login.html" class="to-login-page">Log In</a></li>
-                            </ul>`;
+  console.log(username);
+
+  container.innerHTML = `<div class="menu">
+                                <a href="/" class="${
+                                  pathname === "/" || pathname === "/index.html"
+                                    ? "active"
+                                    : ""
+                                }">Home</a>
+                                ${authLink}
+                        </div>`;
 }
